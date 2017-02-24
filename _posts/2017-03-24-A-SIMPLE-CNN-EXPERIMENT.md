@@ -96,7 +96,7 @@ def convolve(inp,filter,bias,stride=1):
 
 This is a great step which reduces the dimensionality of your data into half i.e, you do this by taking maximum of some square of fixed size throughout the activation map which looks something like this
 
-image 
+![maxpooling](/maxpoolimg.png) 
 
 
 ```python
@@ -226,7 +226,7 @@ So in the function we form a numpy array 'gradient' of the filters shape and 'gr
 
 ### ARCHITECTURE OF CNN:
 
-image of architecture
+![imagearchitecture](/cnnimage.png)
 
 
 Here the image is convolved by five filters of size 3X3 to form an activation map of 26x26 having a depth of 5 is size of (5,3,3).Then comes the max pooling layer which reduces the size of the activation map to (6,13,13) as the stride length is 2.Hence the size is reduced by 4 times.Then this maxpooled layer is stretched into a single column and is then fed as input to the fully connected layers.The fully connected layers consist of an input layer,one hidden layer and an output layer.The input layer has the size of (1,13*13*5),hidden layer is (1,25) and the output is (1,10) i.e, the number of classes.The weights between hidden layer and input layer 'w0' has a size of (13*13*5,25) and the weights between the hidden layer and the output layer has a size of (25,10).The filters and weights are initialized so as to have zero mean.
@@ -304,7 +304,10 @@ The later half is only useful when doing mini-batch training.You may notice that
 ### LEARNT FEATURES:
 After 37 epoches the filters in 'fils1' look something like this
 
-images of filters 
+![fils0](/fils0.png)
+![fils1](/fils1.png)
+![fils2](/fils2.png)
+
 
 ### CONCLUSION AND RESULTS:
 
