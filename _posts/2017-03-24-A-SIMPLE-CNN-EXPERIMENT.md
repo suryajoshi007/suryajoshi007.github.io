@@ -10,8 +10,8 @@ A simple convolutional neural network from scratch with Numpy as its only depend
 
 ### CONVOLVE:
 
-
-image of convolution 
+![image of convolution](/cnnimage.png)
+ 
 
 
 Its the most important part of the CNN.So in this step we have a filter that strides along the image and produces an activation map.So the function to do this will take two inputs that is a 3d array say image and a 4d array say filter which contains many filter(3d array) and performs convolution with each filter and produces a activation map which is again a 3d array having depth as the number of filters.The code looks like this.
