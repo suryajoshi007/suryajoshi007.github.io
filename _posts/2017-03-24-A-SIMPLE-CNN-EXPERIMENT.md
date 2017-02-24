@@ -10,7 +10,7 @@ A simple convolutional neural network from scratch with Numpy as its only depend
 
 ### CONVOLVE:
 
-![image of convolution](/cnnimage.png)
+![image of convolution](/convolution_schematic.gif)
  
 
 
