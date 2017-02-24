@@ -309,7 +309,7 @@ After 37 epoches the filters in 'fils1' look something like this
 
 ### CONCLUSION AND RESULTS:
 
-The CNN was trained on the 1st 1000 images of the MNIST dataset and tested on the 1st 100 images. After 37 epoches it could successfully classify 91 images correctly i.e, **91% accuracy** .A fully connected neural network was also trained on the same mini dataset for more than 100 epochs but it was able to classify only 86 images correctly(86% accuracy).Just by adding three 3x3 filters there was a boost from **86%** to **91%** accuracy.However the training time also increased. But the above experiment if you can call it one shows that CNNs through there filters really learn the essential features in a image.
+The CNN was trained on the 1st 1000 images of the MNIST dataset and tested on the 1st 100 images. After 37 epochs it could successfully classify 91 images correctly i.e., **91% accuracy**. A fully connected neural network was also trained on the same mini dataset for more than 100 epochs but it was able to classify only 86 images correctly (86% accuracy). Just by adding three 3x3 filters there was a boost from **86%** to **91%** accuracy. However the training time also increased. But the above experiment, if you can call it one, shows that CNNs through the filters really learn the essential features in an image.
 
 
 
