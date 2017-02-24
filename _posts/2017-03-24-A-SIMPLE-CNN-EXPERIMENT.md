@@ -1,8 +1,8 @@
 ---
 layout: post
-title:A SIMPLE CNN EXPERIMENT
-published:True
-date:2017-03-24
+title: A SIMPLE CNN EXPERIMENT
+published: True
+date: 2017-03-24
 ---
 
 
