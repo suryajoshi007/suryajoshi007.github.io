@@ -14,7 +14,7 @@ A simple convolutional neural network from scratch with Numpy as its only depend
  
 
 
-Its the most important part of the CNN.So in this step we have a filter that strides along the image and produces an activation map.So the function to do this will take two inputs that is a 3d array say image and a 4d array say filter which contains many filter(3d array) and performs convolution with each filter and produces a activation map which is again a 3d array having depth as the number of filters.The code looks like this.
+Its the most important part of the CNN. So in this step we have a filter that strides along the image and produces an activation map. The function to do this will take two inputs that is a 3d array image and a 4d array say filter which contains many filter(3d array) and performs convolution with each filter and produces a activation map which is again a 3d array having depth as the number of filters.The code looks like this.
 
 
 ```python
@@ -309,7 +309,7 @@ After 37 epoches the filters in 'fils1' look something like this
 
 ### CONCLUSION AND RESULTS:
 
-The CNN was trained on the 1st 1000 images of the MNIST dataset and tested on the 1st 100 images and after 37 epoches it could successfully classify 91 images correctly.A fully connected neural network was also trained on the same mini dataset for more than 100 epochs but it was able to classify only 86 images correctly.Just by adding three 3x3 filters there was a boost from 86 to 91 percent accuracy.But the downfall of the above ' toy cnn ' is that it is terribly slow to train.But the above experiment if you can call it one shows that CNNs through there filters really learn the essential features in a image.
+The CNN was trained on the 1st 1000 images of the MNIST dataset and tested on the 1st 100 images. After 37 epoches it could successfully classify 91 images correctly i.e, **91% accuracy** .A fully connected neural network was also trained on the same mini dataset for more than 100 epochs but it was able to classify only 86 images correctly(86% accuracy).Just by adding three 3x3 filters there was a boost from **86%** to **91%** accuracy.However the training time also increased. But the above experiment if you can call it one shows that CNNs through there filters really learn the essential features in a image.
 
 
 
