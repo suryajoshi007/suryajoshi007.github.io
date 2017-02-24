@@ -4,7 +4,7 @@
 
 A simple convolutional neural network from scratch with Numpy as its only dependency.So let's get straight to it.The following are all the functions that are used to make this CNN.
 
-###CONVOLVE:
+### CONVOLVE:
 
 
 image of convolution 
@@ -88,7 +88,7 @@ def convolve(inp,filter,bias,stride=1):
 ```
 
 
-###MAXPOOL:
+### MAXPOOL:
 
 This is a great step which reduces the dimensionality of your data into half i.e, you do this by taking maximum of some square of fixed size throughout the activation map which looks something like this
 
@@ -170,7 +170,7 @@ def maxpool(inp):
 ```
 
 
-###DELPOOLTOCONV:
+### DELPOOLTOCONV:
 
 
 This function takes deltas from the pooling layer and passes the deltas to the convolutional layers.The output is double the size but has the same depth.This is a straight forward step since the delta is passed to that neuron which had the maximum value.We know the index of the maximum value and hence can do this very effectively.It looks something like this
@@ -189,7 +189,7 @@ def delpooltoconv(pooldelta,maxindex):
 ```
 
 
-###GRADOFFILTER:
+### GRADOFFILTER:
 
 The process of finding gradients of weights is a bit different in CNNs.Since we have weight sharing we will have more than one updates.So in order to find the final weight update we simply sum up all the updates associated with that weight.
 
@@ -220,7 +220,7 @@ def gradoffilter2(delta,prevact):
 So in the function we form a numpy array 'gradient' of the filters shape and 'gradbias' with the shape of the bais and the n stretch it.Then in the for loops we loop through each 2d array in 'gradient' array.It is very similar to normal weight update but we just sum all the updates associated with that weight.
 
 
-###ARCHITECTURE OF CNN:
+### ARCHITECTURE OF CNN:
 
 image of architecture
 
@@ -251,7 +251,7 @@ The input to this CNN is an image and output is a matrix of size (1,10),the maxi
 			error=act7-label
 ```
 
-###BACKPROPAGATION:
+### BACKPROPAGATION:
 
 Similar to vanilla backpropagation we first find all the deltas of all the layers and then to get the weights updates by multiplying the layer's delta with the previous layer's activation.We then use vanilla gradient decent to optimise the loss.The loss is just the different between the predicted value and the label matrix
 
@@ -297,12 +297,12 @@ The later half is only useful when doing mini-batch training.You may notice that
 
 [The full code can be found here]()
 
-###LEARNT FEATURES:
+### LEARNT FEATURES:
 After 37 epoches the filters in 'fils1' look something like this
 
 images of filters 
 
-###CONCLUSION AND RESULTS:
+### CONCLUSION AND RESULTS:
 
 The CNN was trained on the 1st 1000 images of the MNIST dataset and tested on the 1st 100 images and after 37 epoches it could successfully classify 91 images correctly.A fully connected neural network was also trained on the same mini dataset for more than 100 epochs but it was able to classify only 86 images correctly.Just by adding three 3x3 filters there was a boost from 86 to 91 percent accuracy.But the downfall of the above ' toy cnn ' is that it is terribly slow to train.But the above experiment if you can call it one shows that CNNs through there filters really learn the essential features in a image.
 
