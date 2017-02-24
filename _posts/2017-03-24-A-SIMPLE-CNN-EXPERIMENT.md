@@ -1,6 +1,9 @@
+---
+layout: post
+title:A SIMPLE CNN EXPERIMENT
+published:True
+---
 
-
-                                              # "A SIMPLE CNN EXPERIMENT"
 
 A simple convolutional neural network from scratch with Numpy as its only dependency.So let's get straight to it.The following are all the functions that are used to make this CNN.
 
