@@ -299,7 +299,7 @@ Similar to vanilla backpropagation we first find all the deltas of all the layer
 
 The later half is only useful when doing mini-batch training.You may notice that del1 is not multiplied with derivative of that layer because I found it to work better that way.
 
-[The full code can be found here]()
+[The full code can be found here](https://github.com/suryajoshi007/toycnn)
 
 ### LEARNT FEATURES:
 After 37 epoches the filters in 'fils1' look something like this
