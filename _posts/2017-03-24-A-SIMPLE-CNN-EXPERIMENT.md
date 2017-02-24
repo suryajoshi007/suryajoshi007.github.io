@@ -304,9 +304,7 @@ The later half is only useful when doing mini-batch training.You may notice that
 ### LEARNT FEATURES:
 After 37 epoches the filters in 'fils1' look something like this
 
-![fils0](/fils0.png)
-![fils1](/fils1.png)
-![fils2](/fils2.png)
+![fils0](/fils0.png)![fils1](/fils1.png)![fils2](/fils2.png)
 
 
 ### CONCLUSION AND RESULTS:
